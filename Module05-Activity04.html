@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+
+        <title>Polymorphism</title>
+    </head>
+    <body>
+        <script>
+            class myToy
+            {
+                constructor()
+                {
+                    this.brand="Toyota";
+                }
+            }
+
+            class Vehicle extends myToy
+            {
+                constructor(model, variant)
+                {
+                    super();
+                    this.model = model;
+                    this.variant = variant;
+                }
+            }
+
+            let v = new Vehicle("2022","Wigo");
+            alert(v.brand + " " + v.model + " " + v.variant);
+        </script>
+    </body>
+</html>
+
+
